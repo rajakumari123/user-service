@@ -21,7 +21,7 @@ public class RegistrationRequestDto {
 
     @NotNull(message = "Password cannot be null")
     @NotEmpty(message = "Password cannot be empty")
-    @Pattern(regexp = "^(?=.*[0-9])(?=.*[A-Z])(?=.*[_ #$%.])(?=\\S+$).{8,}$", message = "Password need to be greater than 8 characters, containing at least 1 number, 1 Capitalized letter, 1 special character in this set “_ # $ % .” ")
+    @Pattern(regexp = "^(?=.*[0-9])(?=.*[A-Z])(?=.*[_ #$%.])(?=\\S+$).{8,}$", message = "Password need to be greater than 8 characters, containing at least 1 number, 1 Capitalized letter, 1 special character in this set \"_ # $ % .\"")
     private String password;
 
     @NotNull(message = "Ip Address cannot be null")
